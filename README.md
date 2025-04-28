@@ -23,6 +23,30 @@ The user provides a business problem or requirement, and the system generates ar
 
 Below is the high-level workflow of the system:
 
++-------------------+       +-------------------+       +-------------------+
+|                   |       |                   |       |                   |
+|  User Input via   |       |  Cloud Architect  |       |  Open-Source      |
+|  Streamlit UI     +------->  Agent Designs    +------->  Architect Agent  |
+|                   |       |  Cloud Solution   |       |  Designs OSS      |
++-------------------+       +-------------------+       |  Solution         |
+                                                        +-------------------+
+                                                               |
+                                                               v
+                                                      +-------------------+
+                                                      |                   |
+                                                      |  Lead Architect   |
+                                                      |  Agent Evaluates  |
+                                                      |  and Recommends   |
+                                                      +-------------------+
+                                                               |
+                                                               v
+                                                      +-------------------+
+                                                      |                   |
+                                                      |  Streamlit UI     |
+                                                      |  Displays Final   |
+                                                      |  Output           |
+                                                      +-------------------+
+
 Multi-Agent System
 The application uses the following components from the autogen library:
 
